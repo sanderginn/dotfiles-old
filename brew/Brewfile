@@ -6,6 +6,7 @@ cask "sublime-text"
 cask "firefox"
 cask "franz"
 cask "intellij-idea-ce"
+cask "viscosity"
 
 brew "git"
 brew "maven"
