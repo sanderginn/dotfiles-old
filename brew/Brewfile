@@ -13,6 +13,7 @@ brew "maven"
 brew "terraform"
 brew "kubectl"
 brew "azure-cli"
+brew "kubectx"
 brew "autojump"
 brew "mas"
 
