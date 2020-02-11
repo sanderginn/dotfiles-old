@@ -19,13 +19,16 @@
 
 - brewfile:
     file: brew/Brewfile
-    # Shows brew output
     stdout: true
     stderr: true
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  #- 
+  - 
+    command: chmod +x terraform/.providers && ./terraform/.providers
+    stdout: true
+    stderr: true
+  # - 
    # command: chmod +x macos/.base && ./macos/.base
    # stdin: true
    # stdout: true

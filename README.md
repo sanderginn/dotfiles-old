@@ -14,12 +14,11 @@ Host *
   UseKeychain yes
   IdentityFile ~/.ssh/id_rsa
 ```
-
 4. Add your SSH private key to the ssh-agent and store your passphrase in the keychain
 
 `$ ssh-add -K ~/.ssh/id_rsa`
 
-5. Copy to add to GitHub account
+5. Copy to add to Git provider accounts
 
 `$ pbcopy < ~/.ssh/id_rsa.pub`
 
