@@ -1,8 +1,10 @@
 ## SSH key
 1. Generate new SSH key
+
 `$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 
 2. Start the ssh-agent in the background
+
 `$ eval "$(ssh-agent -s)"`
 
 3. Modify your ~/.ssh/config file to automatically load keys into the ssh-agent and store passphrases in your keychain
@@ -14,9 +16,11 @@ Host *
 ```
 
 4. Add your SSH private key to the ssh-agent and store your passphrase in the keychain
+
 `$ ssh-add -K ~/.ssh/id_rsa`
 
 5. Copy to add to GitHub account
+
 `$ pbcopy < ~/.ssh/id_rsa.pub`
 
 ## Installation
