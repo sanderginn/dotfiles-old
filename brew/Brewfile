@@ -8,9 +8,11 @@ cask "franz"
 cask "intellij-idea-ce"
 
 brew "git"
-brew "autojump"
 brew "maven"
 brew "terraform"
+brew "kubectl"
+brew "azure-cli"
+brew "autojump"
 brew "mas"
 
 mas "Magnet", id: 441258766

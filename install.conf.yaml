@@ -6,10 +6,7 @@
 - clean: ['~']
 
 - link:
-    # MacOS
-    ~/.base.macos: macos/.base
- 
-    # Shell stuff
+     # Shell stuff
     ~/.aliases: shell/.aliases
     ~/.functions: shell/.functions
     ~/.zshrc: shell/.zshrc
@@ -25,11 +22,11 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - 
-    command: chmod +x terraform/.providers && ./terraform/.providers
+    command: sh terraform/providers.sh
     stdout: true
     stderr: true
   # - 
-   # command: chmod +x macos/.base && ./macos/.base
+   # command: sh macos/base.sh
    # stdin: true
    # stdout: true
    # stderr: true
