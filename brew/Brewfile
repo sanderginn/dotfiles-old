@@ -1,0 +1,13 @@
+tap "homebrew/cask"
+tap "AdoptOpenJDK/openjdk"
+
+cask "adoptopenjdk8"
+cask "sublime-text"
+cask "firefox"
+cask "franz"
+cask "intellij-idea-ce"
+
+brew "maven"
+brew "mas"
+
+mas "Magnet", id: 441258766

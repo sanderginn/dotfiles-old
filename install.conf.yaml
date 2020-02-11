@@ -1,0 +1,29 @@
+# install.conf.yaml
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    # MacOS
+    ~/.base.macos: macos/.base
+ 
+    # Shell stuff
+    ~/.aliases: shell/.aliases
+    ~/.functions: shell/.functions
+    ~/.zshrc: shell/.zshrc
+
+    # Git
+    ~/.gitignore: git/.gitignore
+
+- brewfile:
+    file: brew/Brewfile
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  #- 
+   # command: chmod +x macos/.base && ./macos/.base
+   # stdin: true
+   # stdout: true
+   # stderr: true
