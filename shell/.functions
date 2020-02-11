@@ -1,0 +1,8 @@
+function setazctx() {
+  if [[ "$1" != "" && "$2" != "" ]]
+  then
+    az aks get-credentials -n "$1" -g "$2"
+  else
+    printf "Usage: setazctx <cluster name> <resource group>\n"
+  fi
+}
