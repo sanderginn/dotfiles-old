@@ -19,6 +19,9 @@
 
 - brewfile:
     file: brew/Brewfile
+    # Shows brew output
+    stdout: true
+    stderr: true
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

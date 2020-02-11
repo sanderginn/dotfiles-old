@@ -8,6 +8,7 @@ cask "franz"
 cask "intellij-idea-ce"
 
 brew "maven"
+brew "terraform"
 brew "mas"
 
 mas "Magnet", id: 441258766
