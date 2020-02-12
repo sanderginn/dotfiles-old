@@ -7,8 +7,8 @@
 
 - link:
      # Shell stuff
-    ~/.aliases: shell/.aliases
-    ~/.functions: shell/.functions
+    ~/.aliases.sh: shell/aliases.sh
+    ~/.functions.sh: shell/functions.sh
     ~/.zshrc: shell/.zshrc
 
     # Git
