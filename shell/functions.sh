@@ -2,6 +2,7 @@
 function check_dotfiles_uncommitted_changes() {
   local REPO=$HOME/repos/github/sanderginn/dotfiles
   local CHANGED=$(git --git-dir=$REPO/.git diff-index --name-only HEAD --)
+  printf "/nchanged = $CHANGED/n"
 
   if [ -n "$CHANGED" ]; then
     tput setaf 1
