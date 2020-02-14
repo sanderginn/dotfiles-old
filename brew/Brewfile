@@ -8,6 +8,7 @@ cask "franz"
 cask "intellij-idea-ce"
 cask "viscosity"
 cask "microsoft-teams"
+cask "spotify"
 
 brew "git"
 brew "maven"

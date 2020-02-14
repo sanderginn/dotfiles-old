@@ -11,4 +11,4 @@ autoload -U +X bashcompinit && bashcompinit
 source <(kubectl completion zsh)
 source /usr/local/etc/bash_completion.d/az
 
-check_dotfiles_uncommitted_changes
+#check_dotfiles_uncommitted_changes
