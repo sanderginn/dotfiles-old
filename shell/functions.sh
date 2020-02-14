@@ -14,6 +14,20 @@ function check_dotfiles_uncommitted_changes() {
 }
 
 #
+# General helper functions
+#
+
+# List ZeroTier network members
+function ztmembers()
+{
+  curl -s --request GET --url "https://my.zerotier.com/api/network/abfd31bd47de3d57/member" \
+  --header "authorization: Bearer 8SrWCrKKJe2AjSyGiyhpjNaQPxLL04Yb" | jq -jc '.[] | select( .online == true ) | "Name: ", .name, "\t\tIP(s): ", (.config.ipAssignments | map("vnc://" + .) | join(",")), "\n" '
+}
+
+
+
+
+#
 # Kubernetes helper functions
 #
 

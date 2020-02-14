@@ -18,6 +18,7 @@ brew "kubectl"
 brew "azure-cli"
 brew "kubectx"
 brew "autojump"
+brew "jq"
 brew "mas"
 
 mas "Magnet", id: 441258766
