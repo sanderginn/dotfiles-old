@@ -9,6 +9,7 @@
      # Shell stuff
     ~/.aliases.sh: shell/aliases.sh
     ~/.functions.sh: shell/functions.sh
+    ~/.manuals.sh: shell/manuals.sh
     ~/.zshrc: shell/.zshrc
 
     # Git

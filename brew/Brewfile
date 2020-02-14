@@ -9,6 +9,7 @@ cask "intellij-idea-ce"
 cask "viscosity"
 cask "microsoft-teams"
 cask "spotify"
+cask "zerotier-one"
 
 brew "git"
 brew "maven"

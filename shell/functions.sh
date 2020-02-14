@@ -13,7 +13,6 @@ function check_dotfiles_uncommitted_changes() {
   fi
 }
 
-
 #
 # Kubernetes helper functions
 #
