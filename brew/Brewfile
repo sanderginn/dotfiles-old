@@ -17,6 +17,8 @@ cask "datagrip"
 cask "goland"
 cask "transmission"
 cask "teamviewer"
+cask "vlc"
+cask "3cxphone"
 
 brew "git"
 brew "maven"
@@ -32,3 +34,4 @@ brew "watch"
 brew "mas"
 
 mas "Magnet", id: 441258766
+mas "Amphetamine", id: 937984704
