@@ -21,6 +21,7 @@ cask "vlc"
 cask "3cxphone"
 cask "docker"
 cask "visual-studio-code"
+cask "battle-net"
 
 brew "git"
 brew "maven"
@@ -37,6 +38,7 @@ brew "mas"
 brew "node@10"
 brew "graphviz"
 brew "pipenv"
+brew "plantuml"
 
 mas "Magnet", id: 441258766
 mas "Amphetamine", id: 937984704
