@@ -22,6 +22,8 @@ cask "3cxphone"
 cask "docker"
 cask "visual-studio-code"
 cask "battle-net"
+cask "telegram"
+cask "sourcetree"
 
 brew "git"
 brew "maven"
@@ -39,6 +41,7 @@ brew "node@10"
 brew "graphviz"
 brew "pipenv"
 brew "plantuml"
+brew "wget"
 
 mas "Magnet", id: 441258766
 mas "Amphetamine", id: 937984704
