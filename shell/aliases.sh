@@ -1,0 +1,1 @@
+alias tfgenerate='docker run -v `pwd`/kubeconfig:/kubeconfig -e KUBECONFIG=/kubeconfig -v `pwd`:/docker -w /docker --rm -it registry.rebelsoft.com/terraform-provider-k8s generator'
