@@ -1,1 +1,4 @@
-alias tfgenerate='docker run -v `pwd`/kubeconfig:/kubeconfig -e KUBECONFIG=/kubeconfig -v `pwd`:/docker -w /docker --rm -it registry.rebelsoft.com/terraform-provider-k8s generator'
+docker pull registry.rebelsoft.com/terraform-provider-k8s -q
+alias terraform='docker run -v ${HOME}/.kube/config:/kubeconfig -e KUBECONFIG=/kubeconfig -v `pwd`:/docker -w /docker --rm -it registry.rebelsoft.com/terraform-provider-k8s terraform'
+alias tfgenerate='docker run -v ${HOME}/.kube/config:/kubeconfig -e KUBECONFIG=/kubeconfig -v `pwd`:/docker -w /docker --rm -it registry.rebelsoft.com/terraform-provider-k8s generator'
+alias tfextract='docker run -v ${HOME}/.kube/config:/kubeconfig -e KUBECONFIG=/kubeconfig -v `pwd`:/docker -w /docker --rm -it registry.rebelsoft.com/terraform-provider-k8s extractor'
