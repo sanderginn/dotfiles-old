@@ -31,5 +31,6 @@ curl -fsSLO https://raw.githubusercontent.com/sanderginn/dotfiles/master/pre.sh 
 
 ## Possible problems
 * `$ Error: Permission denied @ dir_s_mkdir - /usr/local/Caskroom`
+
 Set correct permissions with `sudo chown <username>:staff /usr/local/Caskroom`
 
