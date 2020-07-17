@@ -45,6 +45,7 @@ brew "plantuml"
 brew "wget"
 brew "packer"
 brew "helm"
+brew "mackup"
 
 mas "Magnet", id: 441258766
 mas "Amphetamine", id: 937984704

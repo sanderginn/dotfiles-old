@@ -15,6 +15,9 @@
     # Git
     ~/.gitignore: git/.gitignore
 
+    # Mackup
+    ~/.mackup.cfg: macos/mackup.cfg
+
 - brewfile:
     file: brew/Brewfile
     stdout: true
