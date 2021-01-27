@@ -2,6 +2,7 @@ tap "homebrew/cask"
 tap "AdoptOpenJDK/openjdk"
 
 cask "adoptopenjdk8"
+cask "adoptopenjdk11"
 cask "sublime-text"
 cask "firefox"
 cask "franz"
@@ -38,7 +39,6 @@ brew "autojump"
 brew "jq"
 brew "watch"
 brew "mas"
-brew "node@10"
 brew "graphviz"
 brew "pipenv"
 brew "plantuml"
@@ -46,6 +46,7 @@ brew "wget"
 brew "packer"
 brew "helm"
 brew "mackup"
+brew "node"
 
 mas "Magnet", id: 441258766
 mas "Amphetamine", id: 937984704
