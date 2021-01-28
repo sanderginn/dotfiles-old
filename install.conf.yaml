@@ -26,10 +26,6 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - 
-    command: sh terraform/providers.sh
-    stdout: true
-    stderr: true
-  - 
     command: sh git/git.aliases.sh
     stdout: true
     stderr: true

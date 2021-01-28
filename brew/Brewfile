@@ -22,6 +22,7 @@ cask "telegram"
 cask "sourcetree"
 cask "discord"
 cask "signal"
+cask "1password"
 
 brew "git"
 brew "maven"
