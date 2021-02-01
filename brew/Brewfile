@@ -24,6 +24,7 @@ cask "discord"
 cask "signal"
 cask "1password"
 cask "twitch"
+cask "macdown"
 
 brew "git"
 brew "maven"
