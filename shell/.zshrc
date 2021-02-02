@@ -12,9 +12,5 @@ autoload -U +X bashcompinit && bashcompinit
 source <(kubectl completion zsh)
 source /usr/local/etc/bash_completion.d/az
 
-#check_dotfiles_uncommitted_changes
-
-export KUBECONFIG=$HOME/Desktop/config.yaml
-
 # set maven's java version to 8
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
