@@ -45,6 +45,7 @@ brew "packer"
 brew "helm"
 brew "mackup"
 brew "node"
+brew "fluxctl"
 
 mas "Magnet", id: 441258766
 mas "Amphetamine", id: 937984704
