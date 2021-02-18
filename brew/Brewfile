@@ -26,6 +26,7 @@ cask "1password"
 cask "twitch"
 cask "macdown"
 cask "steam"
+cask "google-drive-file-stream"
 
 brew "git"
 brew "maven"
