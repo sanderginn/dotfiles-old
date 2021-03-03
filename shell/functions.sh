@@ -48,3 +48,12 @@ function kga() {
 function kgans() {
   kubectl get all --all-namespaces "$@"
 }
+
+function fsync() {
+  if [[ -z "$1" ]]
+  then
+    fluxctl sync --k8s-fwd-ns flux
+  else
+    fluxctl sync --k8s-fwd-ns "$1"
+  fi
+}
