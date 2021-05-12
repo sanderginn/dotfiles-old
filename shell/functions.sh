@@ -57,3 +57,12 @@ function fsync() {
     fluxctl sync --k8s-fwd-ns "$1"
   fi
 }
+
+function ksd() {
+  if [[ -z "$2" ]]
+  then
+    kubectl get secret "$1" -o go-template='{{range $data,$value := .data}}{{print $data " = " ($value | base64decode) "\n"}}{{end}}'
+  else
+    kubectl get secret "$1" -n "$2" -o go-template='{{range $data,$value := .data}}{{print $data " = " ($value | base64decode) "\n"}}{{end}}'
+  fi
+}
