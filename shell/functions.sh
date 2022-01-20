@@ -13,19 +13,6 @@ function check_dotfiles_uncommitted_changes() {
   fi
 }
 
-#
-# General helper functions
-#
-
-# List ZeroTier network members
-function ztmembers()
-{
-  curl -s --request GET --url "https://my.zerotier.com/api/network/abfd31bd47de3d57/member" \
-  --header "authorization: Bearer 8SrWCrKKJe2AjSyGiyhpjNaQPxLL04Yb" | jq -jc '.[] | select( .online == true ) | "Name: ", .name, "\t\tIP(s): ", (.config.ipAssignments | map("vnc://" + .) | join(",")), "\n" '
-}
-
-
-
 
 #
 # Kubernetes helper functions
@@ -65,4 +52,21 @@ function ksd() {
   else
     kubectl get secret "$1" -n "$2" -o go-template='{{range $data,$value := .data}}{{print $data " = " ($value | base64decode) "\n"}}{{end}}'
   fi
+}
+
+function kshell() {
+  kubectl run --limits='cpu=100m,memory=200Mi' --requests='cpu=100m,memory=200Mi' --image=alpine:3.5 -it alpine-shell -- /bin/sh
+}
+
+function kgacr {
+  for i in $(kubectl api-resources --verbs=list --namespaced -o name | grep -v "events.events.k8s.io" | grep -v "events" | sort | uniq); do
+    echo "Resource:" $i
+    
+    if [ -z "$1" ]
+    then
+        kubectl get --ignore-not-found ${i}
+    else
+        kubectl -n ${1} get --ignore-not-found ${i}
+    fi
+  done
 }

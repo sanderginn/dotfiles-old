@@ -27,6 +27,7 @@ cask "twitch"
 cask "macdown"
 cask "steam"
 cask "google-drive-file-stream"
+cask "google-drive"
 cask "pycharm-ce"
 
 brew "git"
@@ -50,6 +51,11 @@ brew "mackup"
 brew "node"
 brew "fluxctl"
 brew "terraform-docs"
+brew "yq"
+brew "argocd"
+brew "python@3.9"
+brew "datawire/blackbird/telepresence"
+
 
 mas "Magnet", id: 441258766
 mas "Amphetamine", id: 937984704
